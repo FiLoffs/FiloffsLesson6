@@ -70,13 +70,13 @@ namespace Lesson6Class1
 
         private static void task2()
         {
-            double[,] c = new double[15, 15];
+            double[,] c = new double[10, 10];
             double sum = 0;
             Random x = new Random();
 
-            for (int i = 0; i < 15; i++)
+            for (int i = 0; i < 10; i++)
             {
-                for (int j = 0; j < 15; j++)
+                for (int j = 0; j < 10; j++)
                 {
                     c[i, j] = Convert.ToDouble(x.Next(10));
                     Console.Write(c[i, j] + "\t");
@@ -88,8 +88,8 @@ namespace Lesson6Class1
 
                 Console.WriteLine();
             }
-            Console.WriteLine($"сумма равна = {sum}");
-            Console.WriteLine("==========================");
+            Console.WriteLine($"сумма равна главной диагонали равна {sum} \n");
+            Console.WriteLine("==========================\n");
         }
     }
 }
